@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>JavaScript HTML DOM</h1>
+    <h2>The querySelectorAll() Method</h2>
+
+    <p class="demo" id="first">One</p>
+    <p class="demo">Two</p>
+
+    <script>
+      // Access a paragraph Element
+      const myItems = document.querySelector(".demo");
+      console.log(myItems.textContent);
+      // Change the content of the Element
+      //myItems.innerHTML = "First";
+    </script>
+    <button id="mybtn">Click me</button>
+    <p id="demo"></p>
+    <script>
+      btn = document.getElementById("mybtn");
+      btn.addEventListener("mouseenter", function () {
+        document.getElementById("demo").innerHTML = new Date();
+      });
+    </script>
+  </body>
+</html>

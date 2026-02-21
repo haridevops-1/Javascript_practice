@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Local Storage Example</title>
+  </head>
+  <body>
+    <input type="text" id="username" placeholder="Enter your Username" />
+    <input type="password" id="password" placeholder="Enter your password" />
+    <p id="display"></p>
+    <button id="myBtn">Login</button>
+
+    <script>
+      let btn = document.querySelector("#myBtn");
+
+      btn.addEventListener("click", function () {
+        let name = document.querySelector("#username").value;
+        let pass = document.querySelector("#password").value;
+
+        localStorage.setItem("username", name);
+        localStorage.setItem("password", pass);
+
+        showData();
+      });
+
+      function showData() {
+        let savedName = localStorage.getItem("username");
+        let savedPassword = localStorage.getItem("password");
+
+        document.getElementById("display").textContent =
+          "Stored Username: " + savedName;
+      }
+
+      showData();
+    </script>
+  </body>
+</html>

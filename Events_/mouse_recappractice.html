@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Javascript- Events Topics</h1>
+    <h3>Mouse-Events own Practice</h3>
+    <h2>Click- Events</h2>
+    <!--  Button for checking events-->
+    <button id="mybtn">Click to view date</button>
+    <!-- Para, to view the output -->
+    <p id="demo"></p>
+    <!-- dblclick- Actions-->
+    <h2>Doubleclick- Events</h2>
+    <button id="mybtn-2">Click to view Date</button>
+    <p id="demo-2"></p>
+    <!-- mouseover -->
+    <h2>MouseOver Events</h2>
+    <button id="mybtn-3">Click to view</button>
+    <p id="demo-3"></p>
+
+    <!-- Javascript to use the Events -->
+    <script>
+      // Selecting the button to manipulate First
+      btn = document.getElementById("mybtn");
+      //   Now only, we are telling the instructions for button what to do by using addEventListener
+      btn.addEventListener("click", function () {
+        document.getElementById("demo").innerHTML = new Date();
+      });
+      //   For Double-click Actions
+      button = document.getElementById("mybtn-2");
+      button.addEventListener("dblclick", function () {
+        document.getElementById("demo-2").innerHTML = Date();
+      });
+      //   MouseOver- Events
+      mouse_button = document.getElementById("mybtn-3");
+      result = document.getElementById("demo-3");
+      mouse_button.addEventListener("mouseover", function () {
+        result.innerHTML = Date();
+      });
+    </script>
+  </body>
+</html>

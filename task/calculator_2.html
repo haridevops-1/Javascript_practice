@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calulator</title>
+  </head>
+  <body>
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <input type="number" id="num2" placeholder="Enter second number" />
+    <!-- Buttons -->
+    <button id="add">Add</button>
+    <button id="sub">sub</button>
+    <button id="mul">Mul</button>
+    <button id="div">Div</button>
+    <div id="result">Result</div>
+
+    <!-- script -->
+    <script>
+      // Selecting all the values safely
+      let n1 = document.querySelector("#num1");
+      let n2 = document.querySelector("#num2");
+      let Add = document.querySelector("#add");
+      let Sub = document.querySelector("#sub");
+      let Mul = document.querySelector("Mul");
+      let Div = document.querySelector("div");
+
+      //   Addition
+      Add.addEventListener("click", () => {
+        let number1 = n1.value;
+        let number2 = n2.value;
+        let result = number1 + number2;
+      });
+    </script>
+  </body>
+</html>

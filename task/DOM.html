@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Main-container */
+      .container {
+        text-align: center;
+      }
+      /* Input */
+      .container input {
+        margin-bottom: 20px;
+        margin-top: 5px;
+        padding: 15px;
+        padding-left: 30px;
+        padding-right: 100px;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      /* button */
+      #myBtn {
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        background-color: blue;
+        border: none;
+        color: #ffff;
+        border-radius: 10px;
+        font-weight: 500px;
+        font-family: "Arial";
+      }
+      /* Line */
+      .line {
+        border: 1px solid grey;
+        margin: 50px;
+      }
+      /* /* empty * */
+      .empty {
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        padding: 20px;
+        margin-left: 50px;
+        margin-top: 20px;
+        font-family: Arial;
+        background-color: #f9f9f9;
+      }
+      #output {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main-container -->
+    <div class="container">
+      <!-- Label- captain -->
+      <label>Captain Name</label><br />
+      <input type="text" id="captain" /><br />
+      <!--Label- wicket keeper  -->
+      <label>Wicket Keeper Name</label><br />
+      <input type="text" id="wicketkeeper" /><br />
+      <!-- button -->
+      <button id="myBtn">Submit</button>
+      <!-- div for empty line-->
+      <div class="line"></div>
+      <!-- Empty Div for showing the output -->
+      <div id="output"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

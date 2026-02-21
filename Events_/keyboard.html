@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard-Events</title>
+  </head>
+  <body>
+    <input id="key" type="text" placeholder="press any key!" />
+    <p id="demo"></p>
+    <!-- Script -->
+    <script>
+      const key_value = document.getElementById("key");
+      // If we type something, same will show in the down
+      key_value.addEventListener("keydown", function () {
+        document.getElementById("demo").innerHTML = "You pressed:" + event.key;
+      });
+    </script>
+  </body>
+</html>

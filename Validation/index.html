@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #btn {
+        margin-top: 10px;
+      }
+      #usernameError {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="form" novalidate>
+      <input type="text" id="username" required /><br />
+      <span id="usernameError"></span><br />
+      <button id="btn">submit</button>
+    </form>
+    <script>
+      let container = document.querySelector("#form");
+      let input = document.querySelector("#username");
+      let error = document.querySelector("#usernameError");
+      let myBtn = document.querySelector("btn");
+      container.addEventListener("submit", function (event) {
+        if (!username.checkValidity()) {
+          error.textContent = "Username is required!";
+          event.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>

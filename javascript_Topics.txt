@@ -1,0 +1,18 @@
+    1. Variables
+    2. Loops
+    3. Conditionals
+    4. Operators
+    5. String
+    6. Numbers
+    7. Functions
+    8. Objects
+    9. Scope
+    10. Dates
+    11. Arrays
+    12. DOM
+    13. Events - addEventListener(Mouse)
+    14. Arrow Function 
+
+
+Tasks I done
+1. Form - 2 Inputs, should show the output If we click the submit button

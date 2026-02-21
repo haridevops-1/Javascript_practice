@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repeat</title>
+  </head>
+  <body>
+    <button id="myBtn" onclick="update()">Add</button>
+    <div id="result"></div>
+    <script>
+      var btn = document.getElementById("myBtn");
+      var output = document.getElementById("result");
+
+      function update() {
+        var new_att = document.createElement("h1");
+        new_att.textContent = "hello";
+        output.append(new_att);
+      }
+    </script>
+  </body>
+</html>

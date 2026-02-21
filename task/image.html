@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+  </head>
+  <style>
+    img {
+      height: 500px;
+      width: 500px;
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <button id="myBtn">Click to See Image</button>
+    <div class="container"></div>
+
+    <script>
+      let container = document.querySelector(".container");
+      let myBtn = document.getElementById("myBtn");
+      let div = document.createElement("div");
+
+      myBtn.addEventListener("click", () => {
+        div.innerHTML = `<img src="https://ic4.maxabout.us/autos/tw_india/tvs-8/xl-super-123.jpg" alt="not available" />`;
+        container.appendChild(div);
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car- Image</title>
+  </head>
+  <body>
+    <button id="myBtn">Click to view Ducati</button>
+    <div id="container"></div>
+
+    <script>
+      var div = document.querySelector("#container");
+      var btn = document.querySelector("myBtn");
+
+      btn.addEventListener("click", () => {
+        let CreateDiv = document.createElement("div");
+        CreateDiv.innerHTML = `<img src="https://www.facebook.com/tvsxl/" alt= "Not Available"/>`;
+        div.appendChild(CreateDiv);
+      });
+    </script>
+  </body>
+</html> -->
