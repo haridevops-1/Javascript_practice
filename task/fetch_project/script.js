@@ -1,12 +1,11 @@
-var main = document.querySelector("#root");
-
-// Fetching the URL
-fetch(
-  "https://my-json-server.typicode.com/msbAtGit/bootcamp-products-api/products",
-)
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
+async function LoadProduct() {
+  try {
+    // Fetching the URL
+    const response = await fetch(
+      "https://my-json-server.typicode.com/msbAtGit/bootcamp-products-api/products",
+    );
+    const data = await response.json();
+    var main = document.querySelector("#root");
 
     // storing all the data's into one variable
     var product = data;
@@ -27,4 +26,8 @@ fetch(
         `;
       main.appendChild(myDiv);
     }
-  });
+  } catch (error) {
+    console.error("error", error);
+  }
+}
+LoadProduct();
