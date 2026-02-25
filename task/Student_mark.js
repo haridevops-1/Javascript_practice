@@ -1,24 +1,3 @@
-// let StudentDetails = {
-//   name: "Hariharan",
-//   age: 20,
-//   marks: [50, 50, 67, 70, 80],
-//   displayDetails() {
-    // console.log("Name:", this.name, "Age:", this.age, "Marks:", this.marks);
-//     console.log({
-//       Name: this.name,
-//       Age: this.age,
-//       Marks: this.marks,
-//     });
-//   },
-// };
-// function average_marks() {
-//   const sum = StudentDetails.marks.reduce((acc, mark) => acc + mark, 0);
-//   const avg = sum / StudentDetails.marks.length;
-//   console.log("Average marks:", avg);
-// }
-
-// StudentDetails.displayDetails();
-// average_marks();
 
 // Using Class. It is only Important
 class Student {
