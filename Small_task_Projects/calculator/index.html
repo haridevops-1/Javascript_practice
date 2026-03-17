@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <!-- Styles -->
+    <style>
+      input {
+        height: 30px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 1.5px solid black;
+      }
+      #operator {
+        width: 50px;
+        height: 30px;
+        margin-left: 10px;
+      }
+      option {
+        font-size: 25px;
+      }
+      #operator {
+        font-size: 10px;
+        position: fixed;
+        margin-top: 3px;
+      }
+      #calculateBtn {
+        height: 30px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input id="num1" type="number" /><br />
+      <input id="num2" type="number" />
+      <select name="" id="operator">
+        <option value=""></option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option></select
+      ><br />
+      <button id="calculateBtn">Calculate</button>
+      <h3 id="result">Result:</h3>
+    </div>
+  </body>
+  <script type="module" src="app.js"></script>
+</html>
