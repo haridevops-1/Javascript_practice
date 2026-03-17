@@ -1,4 +1,4 @@
-import { add, sub, Mul, Div } from "../calculator/math.js";
+import { add, sub, Mul, Div } from "./math.js";
 
 console.log(add(10, 10));
 console.log(sub(20, 5));
