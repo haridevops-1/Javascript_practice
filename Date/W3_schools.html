@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Javascript- Time</h1>
+    <h2>Check Time by using Event</h2>
+    <!-- Using inner.HTMl -->
+    <button onclick="document.getElementById('demo').innerHTML = Date()">
+      The time is?</button
+    ><br /><br />
+    <!-- Using this.HTMl -->
+    <button onclick="this.innerHTML = Date()">The time is now?</button>
+    <p id="demo"></p>
+    <!-- Using Function, we can display Time-->
+    <button onclick="displayDate()">Function Time ?</button>
+    <script>
+      function displayDate() {
+        var action = (document.getElementById("demo").innerHTML = Date());
+      }
+    </script>
+  </body>
+</html>

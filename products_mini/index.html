@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List of Products</title>
+    <style>
+      #root {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+        position: sticky;
+      }
+
+      .products {
+        border: 1px solid black;
+        height: 400px;
+        width: 350px;
+        margin-bottom: 20px;
+        background-color: rgb(232, 230, 230);
+        border: none;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      }
+      .container {
+        display: flex;
+      }
+      .image img {
+        position: relative;
+        margin-left: 80px;
+        overflow: hidden;
+        object-fit: cover;
+      }
+      .details {
+        padding-left: 20px;
+      }
+      .button1 {
+        height: 40px;
+        width: 100px;
+        margin-left: 80px;
+        margin-top: 10px;
+        background-color: rgb(69, 159, 223);
+        border: none;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <p>Welcome to Javascript Developing</p>
+    <button id="btn">View to see products</button>
+  </body>
+  <script src="./script.js"></script>
+</html>

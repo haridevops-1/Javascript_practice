@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript | localStorage</title>
+  </head>
+  <body>
+    <div>
+      <label>Username</label>
+      <input type="text" id="username" /><br />
+      <label>Password</label>
+      <input type="password" id="password" /><br />
+      <button id="myBtn">Submit</button>
+    </div>
+    <script>
+      let btn = document.querySelector("#myBtn");
+      let name = document.querySelector("#username");
+      let pass = document.querySelector("#password");
+
+      btn.addEventListener("click", () => {
+        if (name.value === "") {
+          alert("Enter username");
+        }
+        if (pass.value === "") {
+          alert("Enter password");
+        } else {
+          alert("Login successful");
+        }
+        localStorage.setItem("username", name.value);
+        localStorage.setItem("password", pass.value);
+      });
+    </script>
+  </body>
+</html>

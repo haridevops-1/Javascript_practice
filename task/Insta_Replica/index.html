@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InstaFeed</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main Container */
+/* .container {
+  width: 420px;
+  margin-top: 20px;
+} */
+
+/* Card */ 
+
+/* Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.card-header img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-header strong {
+  font-size: 14px;
+}
+
+/* Image */
+.card-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* Content */
+.card-content {
+  padding: 12px;
+}
+
+.likes {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.card-content p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* .card-content small {
+  color: gray;
+  font-size: 12px;
+} */
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div id="feed"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

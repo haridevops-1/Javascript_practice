@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Javascript Fundamentals</h1>
+    <h3>setInterval()Method</h3>
+
+    <div id="output"></div>
+    <input type="number" id="user-values" />
+    <button id="myBtn">Click me</button>
+    <!-- Script -->
+    <script>
+      // Selecting all the HTML Elements
+      let result = document.getElementById("output");
+      let input = document.querySelector("#user-values");
+      let Btn = document.querySelector("#myBtn");
+
+      // Creating empty variable to make setInterval() method
+      let action;
+      // Adding Event for Button
+      Btn.addEventListener("click", () => {
+        output.innerText = input.value;
+        let counter = input.value;
+
+        action = setInterval(() => {
+          counter--;
+          result.innerText = counter;
+
+          // If count == 0, make alert
+          if (counter == 0) {
+            alert("Timer is up");
+            clearInterval(action);
+          }
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

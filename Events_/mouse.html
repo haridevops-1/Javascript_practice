@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse-Events</title>
+  </head>
+  <body>
+    <div
+      id="box"
+      style="
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        padding: 20px;
+      "
+    >
+      Move mouse over this box
+    </div>
+    <!-- Script -->
+    <script>
+      const box = document.getElementById("box");
+      //   Mouse over, Event will happen
+      box.addEventListener("mouseover", function () {
+        box.innerHTML = "Mouse is hover me";
+      });
+      //   MouseOut
+      box.addEventListener("mouseout", function () {
+        box.innerHTML = "Mouse is out!";
+      });
+    </script>
+  </body>
+</html>

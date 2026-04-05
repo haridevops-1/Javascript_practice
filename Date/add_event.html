@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event-Listener</title>
+  </head>
+  <body>
+    <h1>Javascript-EventListener</h1>
+    <h3>addEventListener()</h3>
+    <button onclick="DateDisplay()">Click Me</button>
+    <p id="demo"></p>
+    <script>
+      function DateDisplay() {
+        var result = (document.getElementById("demo").innerHTML = Date());
+      }
+    </script>
+
+    <!-- Using addEventListener -->
+    <button id="mybtn">Touch Me</button>
+    <p id="demo"></p>
+    <script>
+      // Selecting button, because we are using addEventListener to this button only.
+      // If we click this button, action will happen
+      btn = document.getElementById("mybtn");
+      btn.addEventListener("click", function () {
+        document.getElementById("demo").innerHTML = Date();
+      });
+    </script>
+  </body>
+</html>

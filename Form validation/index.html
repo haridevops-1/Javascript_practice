@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="enter your email" />
+    <span></span>
+    <input type="text" placeholder="enter the password" />
+    <p></p>
+
+    <button>click to Submit</button>
+
+    <script>
+      const input = document.querySelectorAll("input");
+      const span = document.querySelector("span");
+      const btn = document.querySelector("button");
+      const para = document.querySelector("p");
+
+      btn.addEventListener("click", () => {
+        if (input[0].value.length === 0) {
+          span.innerHTML = "Enter the valid email";
+          span.style.color = "red";
+        }
+        if (input[1].value.length === 0) {
+          para.innerHTML = "Password is required";
+          para.style.color = "blue";
+        }
+      });
+    </script>
+  </body>
+</html>

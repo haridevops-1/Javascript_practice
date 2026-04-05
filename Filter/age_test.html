@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript- Arrays</title>
+  </head>
+  <style>
+    button {
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Javascript- Arrays</h1>
+      <h3>The Filter() Method</h3>
+      <p>
+        Click "Test" to get every element in the array that has a value above
+        this number:
+      </p>
+
+      <input type="number" id="ageToCheck" value="30" /><br />
+      <p id="demo"></p>
+      <button onclick="myFunction()">Click to Test</button>
+    </div>
+    <script>
+      const ages = [19, 20, 39, 49, 53];
+      function CheckAge(age) {
+        return age > document.getElementById("ageToCheck").value;
+      }
+      function myFunction() {
+        document.getElementById("demo").innerHTML = ages.filter(CheckAge);
+      }
+    </script>
+  </body>
+</html>
